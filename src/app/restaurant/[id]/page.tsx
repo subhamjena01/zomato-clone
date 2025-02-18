@@ -1,7 +1,7 @@
 'use client';
 
 import { useParams } from 'next/navigation';
-import { Plus, Check, Info, Clock, MapPin, Calendar, Lock, ChevronDown, Bookmark, Forward } from 'lucide-react'; // Import additional icons
+import { Plus, Check, Info, Clock, MapPin, Calendar, Lock, ChevronDown, Bookmark, Forward} from 'lucide-react'; // Import additional icons
 import { useCartStore } from '@/store/cartStore';
 import { RESTAURANTS } from '@/data/restaurants';
 
@@ -170,7 +170,7 @@ export default function RestaurantPage() {
         Add
         <div className="absolute text-l font-thin top-px right-2">+</div>
       </div>
-      <div className="text-l mb-2 font-medium text-neutral-400 relative my-10 text-center">customisable</div>
+      <div className="text-l mb-2 font-medium text-neutral-800 relative my-10 text-center">customisable</div>
       </div>
       
     </div>
