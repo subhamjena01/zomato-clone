@@ -48,13 +48,13 @@ export default function RestaurantPage() {
     </div>
 
     {/* Additional Info */}
-    <div className="flex items-center text-sm text-gray-600 gap-2 mt-1">
+    <div className="flex items-center text-sm text-gray-600 gap-2 mt-1 dark:text-neutral-300">
       <div className="flex items-center gap-1">
         <Clock className="h-5 w-5 text-gray-500" />
         <span>32 mins</span>
       </div>
-      <span className="h-4 w-px bg-gray-400" />
-      <div className="flex items-center gap-1">
+      <span className="h-4 w-px bg-gray-400"  />
+      <div className="flex items-center gap-1 ">
         <span>5.2 km</span>
       </div>
       <span className="h-4 w-px bg-gray-400" />
@@ -65,7 +65,7 @@ export default function RestaurantPage() {
     </div>
 
     {/* Schedule for Later */}
-    <div className="flex items-center gap-1 text-sm text-gray-600 mt-2">
+    <div className="flex items-center gap-1 text-sm text-gray-600 mt-2 dark:text-neutral-300">
       <Calendar className="h-5 w-5 text-gray-500" />
       <span>Schedule for later</span>
     </div>
@@ -102,12 +102,12 @@ export default function RestaurantPage() {
 
 <div className="mb-4 bg-stone-200 h-px w-auto"></div>
 
-<div className='mb-4 flex item-center justify-between'>
-  <div className="flex items-center text-black px-4 text-s">
+<div className="mb-4 flex item-center justify-between">
+  <div className="flex items-center text-black px-4 text-s dark:text-neutral-300">
     <Lock className="h-4 w-4 mr-2" />
     Free delivery
   </div>
-  <div className="flex items-center text-black px-4 text-s">
+  <div className="flex items-center text-black px-4 text-s dark:text-neutral-300">
     3 Offer
   </div>
 </div>
@@ -138,7 +138,7 @@ export default function RestaurantPage() {
 <div className="mb-4 bg-stone-200 h-px w-auto"></div>
 
 <div>
-    <div className="mb-4 flex justify-between justify-items-center">
+    <div className="mb-4 flex justify-between justify-items-center ">
         <div className="text-2xl font-semibold">Recommended for you</div>
         <div><ChevronDown className="h-8 w-8 ml-2 text-gray-500"/></div>
     </div>
@@ -146,7 +146,7 @@ export default function RestaurantPage() {
       <div className="w-1/2">
         <div className="flex items-center gap-1 mb-2">
           <Clock className="h-5 w-5 text-gray-500" />
-          <span className="text-xs text-orange-600 bg-orange-100 p-1 rounded">Best Seller</span>
+          <span className="text-xs text-orange-600 bg-orange-100 p-1 rounded ">Best Seller</span>
         </div>
         <div className="text-xl mb-2 font-semibold">
           Non Veg Club Sandwich
@@ -154,23 +154,23 @@ export default function RestaurantPage() {
         <div className="text-base mb-2 font-semibold">
           ₹238
         </div>
-        <div className="text-l mb-2 font-medium text-neutral-400">
+        <div className="text-l mb-2 font-medium text-neutral-400 dark:text-neutral-300">
           grilled Chicken, Chicken Ham, Fried egg, Cheese, Tomato & more...
         </div>
         <div className="flex gap-2">
-          <Bookmark className="h-12 w-12 text-gray-600 rounded-full border border-neutral-300 p-2" />
-          <Forward className="h-12 w-12 text-gray-600 rounded-full border border-neutral-300 p-2" />
+          <Bookmark className="h-12 w-12 text-gray-600 rounded-full border border-neutral-300 p-2 dark:text-neutral-300" />
+          <Forward className="h-12 w-12 text-gray-600 rounded-full border border-neutral-300 p-2 dark:text-neutral-300" />
           
         </div>
       </div>
     <div className="w-1/2">
       <div className="h-50">
         <img src="/Rotisserie-Chicken-Sandwich.jpg" className="rounded-2xl "/>
-        <div className="text-2xl font-bold py-3 w-5/6 mx-auto -my-10 relative bg-pink-100 text-center rounded-lg border border-pink-500">
+        <div className="text-2xl font-bold py-3 w-5/6 mx-auto -my-10 relative bg-pink-100 text-center rounded-lg border border-pink-500 dark:text-pink-500">
         Add
         <div className="absolute text-l font-thin top-px right-2">+</div>
       </div>
-      <div className="text-l mb-2 font-medium text-neutral-400 relative my-10 text-center">customisable</div>
+      <div className="text-l mb-2 font-medium text-neutral-400 relative my-10 text-center dark:text-neutral-300">customisable</div>
       </div>
       
     </div>

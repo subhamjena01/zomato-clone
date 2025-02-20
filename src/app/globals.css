@@ -2,20 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Light mode (default) */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Dark mode - applied when `.dark` class is added to `<html>` by next-themes */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
+/* Apply colors globally */
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'DM Sans',Arial, Helvetica, sans-serif;
+  font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth theme transition */
 }
