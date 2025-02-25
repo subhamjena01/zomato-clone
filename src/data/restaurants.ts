@@ -5,6 +5,7 @@ export type MenuItem = {
   price: number;
   category: string;
   veg: boolean;
+  image: string;
 };
 
 export type Restaurant = {
@@ -12,6 +13,7 @@ export type Restaurant = {
   name: string;
   cuisine: string;
   rating: number;
+  image: string; // ✅ Added image property
   menu: MenuItem[];
 };
 
@@ -21,6 +23,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: 'The Tasty Corner',
     cuisine: 'North Indian',
     rating: 4.5,
+    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4', // ✅ Added image
     menu: [
       {
         id: '1',
@@ -28,7 +31,8 @@ export const RESTAURANTS: Restaurant[] = [
         description: 'Creamy, rich and mildly spiced chicken curry',
         price: 320,
         category: 'Main Course',
-        veg: false
+        veg: false,
+        image: '/margherita-pizza-22-2.jpg' // ✅ Added image
       },
       {
         id: '2',
@@ -36,7 +40,8 @@ export const RESTAURANTS: Restaurant[] = [
         description: 'Grilled cottage cheese in spiced tomato gravy',
         price: 280,
         category: 'Main Course',
-        veg: true
+        veg: true,
+        image: '/margherita-pizza-22-2.jpg' // ✅ Added image
       },
       {
         id: '3',
@@ -44,7 +49,8 @@ export const RESTAURANTS: Restaurant[] = [
         description: 'Creamy black lentils cooked overnight',
         price: 220,
         category: 'Main Course',
-        veg: true
+        veg: true,
+        image: '/margherita-pizza-22-2.jpg' // ✅ Added image
       }
     ]
   },
@@ -53,6 +59,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: 'Pizza Paradise',
     cuisine: 'Italian',
     rating: 4.3,
+    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38', // ✅ Added image
     menu: [
       {
         id: '4',
@@ -60,7 +67,8 @@ export const RESTAURANTS: Restaurant[] = [
         description: 'Classic pizza with tomato sauce, mozzarella, and basil',
         price: 250,
         category: 'Pizza',
-        veg: true
+        veg: true,
+        image: '/margherita-pizza-22-2.jpg' // ✅ Added image
       },
       {
         id: '5',
@@ -68,7 +76,8 @@ export const RESTAURANTS: Restaurant[] = [
         description: 'Pizza topped with spicy pepperoni and cheese',
         price: 350,
         category: 'Pizza',
-        veg: false
+        veg: false,
+        image: '/margherita-pizza-22-2.jpg' // ✅ Added image
       },
       {
         id: '6',
@@ -76,7 +85,8 @@ export const RESTAURANTS: Restaurant[] = [
         description: 'Creamy pasta with parmesan cheese sauce',
         price: 280,
         category: 'Pasta',
-        veg: true
+        veg: true,
+        image: '/margherita-pizza-22-2.jpg' // ✅ Added image
       }
     ]
   },
@@ -85,6 +95,7 @@ export const RESTAURANTS: Restaurant[] = [
     name: 'Wok & Roll',
     cuisine: 'Chinese',
     rating: 4.4,
+    image: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add', // ✅ Added image
     menu: [
       {
         id: '7',
@@ -92,7 +103,8 @@ export const RESTAURANTS: Restaurant[] = [
         description: 'Spicy diced chicken with peanuts and vegetables',
         price: 290,
         category: 'Main Course',
-        veg: false
+        veg: false,
+        image: '/margherita-pizza-22-2.jpg' // ✅ Added image
       },
       {
         id: '8',
@@ -100,7 +112,8 @@ export const RESTAURANTS: Restaurant[] = [
         description: 'Stir-fried noodles with vegetables',
         price: 220,
         category: 'Noodles',
-        veg: true
+        veg: true,
+        image: '/margherita-pizza-22-2.jpg' // ✅ Added image
       },
       {
         id: '9',
@@ -108,7 +121,8 @@ export const RESTAURANTS: Restaurant[] = [
         description: 'Assorted steamed dumplings',
         price: 260,
         category: 'Starters',
-        veg: true
+        veg: true,
+        image: '/margherita-pizza-22-2.jpg' // ✅ Added image
       }
     ]
   }

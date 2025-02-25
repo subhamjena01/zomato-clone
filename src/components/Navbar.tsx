@@ -4,6 +4,7 @@ import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import ThemeSwitch from './ThemeSwitch'; // Import the ThemeSwitch component
+import Cart from './Cart'; // Import the new Cart component
 
 const Navbar = () => {
   return (
@@ -28,6 +29,8 @@ const Navbar = () => {
             <Link href="/profile">
               <MoreVertIcon className="text-gray-800 dark:text-gray-300 hover:dark:text-gray-200 transition-colors" fontSize="large" />
             </Link>
+            {/* Cart component */}
+            <Cart />
             {/* Theme switch button */}
             <ThemeSwitch />
           </div>
